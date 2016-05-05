@@ -89,6 +89,7 @@ body{
 
     header .login-reg{
         /*width: 100px;*/
+        margin:0 1px;
         font-size: 18px;
         text-align: right;
     }
@@ -113,7 +114,8 @@ body{
         /*height: 500px;*/
     }
     footer{
-        position: absolute;
+        clear: both;
+        /*position: absolute;*/
         height: 50px;
         line-height: 50px;
         width: 100%;
@@ -288,6 +290,7 @@ body{
 
 /*着重提示，下一步按钮，以红色调为主   normol*/
 .out-next-bgcolor{
+    color: #fff;
 	background: #fc4849;
 }
 .out-next-bgcolor:hover{
@@ -319,3 +322,4 @@ body{
 .com-content-card-bgcolor{
 	background: #fff;
 }
+
