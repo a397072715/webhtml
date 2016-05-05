@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+    <link href="css/common.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+<header>
+    <div class="nav-bar">
+        <img src="images/logo.png" alt="" class="logo_small">
+        <ul class="navbar-menu">
+            <li><a href="#" style="padding-left:10px;">首页</a></li>
+            <li ><a href="#">产品答辩</a></li>
+            <li><a href="#">课程试听</a></li>
+            <li><a href="#">学员反馈</a></li>
+            <li><a href="#">线下活动</a></li>
+            <li><a href="#" class="active">课程报名</a></li>
+            <li><a href="#">企业招聘</a></li>
+        </ul>
+        <div class="navbar-menu-right">
+            <button class="btn-consult out-next-bgcolor">咨询</button>
+            <div class="query" style="display:none">
+                <div class="content">
+                    <a  class="btn btn-lg btn-danger btn-consult qq-query" role="button">QQ咨询</a>
+                    <p class="showphone">手机：131-2257-7686</p>
+                </div>
+                <s><i></i></s>
+            </div>
+            <div class="login-reg  float-right">
+                <a href="#"  class="margin-right-20">登录</a>
+                <a href="#">注册</a>
+            </div>
+        </div>
+    </div>
+</header>
+<article class="content">
+
+    <div class="fail">
+        <div class="left-img">
+            <img src="images/kcbm_icon_fail.png" alt="">
+        </div>
+        <div class="right-text">
+            <p class="re-submit">报名失败，请重新提交</p>
+            <p class="question">如有疑问，请联系：袁老师（手机号：131-2256-7686，QQ号：252089326）</p>
+            <button class="btn-concel">取消</button>
+            <button class="btn-re-submit">重新提交</button>
+        </div>
+    </div>
+
+    <hr class="divider-second" />
+
+
+
+    <div class="add-info">
+        <div class="left-contain">
+            <div class="left-info">
+                <table class="table">
+                    <caption>注册信息</caption>
+                    <tbody>
+                    <tr>
+                        <td  class="top20">所在城市:</td>
+                        <td  class="text-right">上海</td>
+                    </tr>
+                    <tr>
+                        <td>计划工作城市:</td>
+                        <td  class="text-right">上海</td>
+                    </tr>
+                    <tr>
+                        <td ></td>
+                        <td class="text-right"> </td>
+                    </tr>
+                    <tr>
+                        <td  class="padding20">微信号:</td>
+                        <td class="text-right">987654321</td>
+                    </tr>
+                    <tr>
+                        <td>QQ号</td>
+                        <td class="text-right">987654321</td>
+                    </tr>
+                    <tr>
+                        <td  class="padding20">手机号:</td>
+                        <td class="text-right">15080567231</td>
+                    </tr>
+                    <tr>
+                        <td>邮箱:</td>
+                        <td class="text-right">9876543211@qq.com</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="right-contain">
+            <div class="right-info">
+                <p class="inter-group">集创堂内部群（398408165）</p>
+                <p class="scan">扫一扫二维码，加入该群</p>
+                <img src="images/kcbm_success_erweima.png" alt="">
+
+            </div>
+
+        </div>
+    </div>
+    <p class="empty"></p>
+</article>
+<footer>
+    <p>隐私保护 | 版权所有 | © 2014 集创堂沪 ICP 备 14038740 号-1</p>
+</footer>
+</body>
+</html>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        background: #f2f5f7;
+    }
+    header{
+        width: 100%;
+        height: 80px;
+        background: #fff;
+        min-width: 1020px;
+        border-bottom: 1px solid #e6e9ed;
+    }
+    header .nav-bar{
+        margin: 0 auto;
+        width: 1020px;
+        height: 80px;
+    }
+    header .nav-bar .logo_small{
+        /*		width: 80px;
+                height: 44px;*/
+        margin: 25px auto;
+        float: left;
+    }
+    header .navbar-menu{
+        margin-left: 10px;
+        line-height: 80px;
+        list-style: none;
+        float: left;
+        text-align: left;
+    }
+    header .navbar-menu .active{
+        border-bottom: 2px solid #45a8e6;
+        color: #45a8e6;
+    }
+    header .navbar-menu li{
+        /*		width: 90px;
+                height: 60px;*/
+        font-size: 18px;
+        color: #333D44;
+        float: left;
+        padding-left: 25px;
+    }
+    header .navbar-menu li a{
+        padding-bottom: 10px;
+        color: #333D44;
+    }
+    header  a{
+        text-decoration: none;
+    }
+    header .navbar-menu-right{
+        margin: 0 auto;
+        line-height: 80px;
+    }
+    header .btn-consult{
+        margin-left: 70px;
+        width: 60px;
+        height: 30px;
+        /*border: 1px solid gray;*/
+        /*line-height: 30px;*/
+        text-align: center;
+        border-radius: 30px;
+        border:0;
+        background: #FC4849;
+        color: #fff;
+        outline: none;
+    }
+
+    header .login-reg{
+        /*width: 100px;*/
+        font-size: 18px;
+        text-align: right;
+    }
+    header .login-reg a{
+        color: #333d44;
+    }
+    .float-right{
+        float: right;
+    }
+
+    .margin-right-20{
+        margin-right: 19px;
+    }
+
+
+    article{
+        background: #fff;
+        margin: 0 auto;
+        width: 1020px;
+        /*height: 500px;*/
+        margin-top: 20px;
+        margin-bottom: 100px;
+    }
+    .fail{
+        margin-left: 260px;
+        height: 70px;
+        padding-top: 30px;
+    }
+    .fail .left-img{
+        width: 70px;
+        height: 70px;
+        float: left;
+    }
+    .fail .right-text{
+        float: left;
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .right-text .re-submit{
+        font-size: 18px;
+        color: #fc4849;
+    }
+    .right-text .question{
+        margin-top: 10px;
+        margin-bottom: 30px;
+        font-size: 14px;
+        color: #333d44;
+    }
+    .btn-concel{
+        width: 100px;
+        height: 40px;
+        border-radius: 30px;
+        background: #fff;
+        color: #333d44;
+        outline: none;
+        border: 1px solid #CDD2D7;
+    }
+    .btn-re-submit{
+        width: 150px;
+        height: 40px;
+        border-radius: 30px;
+        border: 0;
+        background: #FC4849;
+        color: #fff;
+        outline: none;
+    }
+
+
+    .divider-second{
+        margin-top: 30px;
+        border: none;
+        height: 1px;
+        background-color: #e6e9ed;
+        clear: both;
+    }
+    .left-contain{
+        width: 510px;
+        border-right: 1px solid #e6e9ed;
+        float: left;
+    }
+    .left-info{
+        margin-left: 200px;
+        margin-top: 20px;
+    }
+    .right-contain{
+        float: left;
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+    .inter-group{
+        font-size: 18px;
+    }
+
+    table{
+        font-size: 14px;
+    }
+    table caption{
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    .text-right{
+        text-align: right;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .empty{
+        clear: both;
+    }
+
+
+
+
+    footer{
+        position: absolute;
+        height: 50px;
+        line-height: 50px;
+        width: 100%;
+        min-width: 1020px;
+        background: #333D44;
+        font-size: 12px;
+        color: #bec5cc;
+        text-align: center;
+        bottom: 0;
+    }
+
+
+
+
+</style>

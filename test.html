@@ -1,0 +1,69 @@
+<html >
+<head>
+</head>
+<style type="text/css">
+.TabButton {
+ cursor: pointer;
+ font-family: Verdana;
+ font-size: 9pt;
+ border-width: 1;
+ border-color: #CCCCCC;
+ border-style: solid;
+ background-color: buttonface;
+ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFF, endColorstr=#DDDDDD);
+}
+.TabDownButton {
+ cursor: pointer;
+ font-family: Verdana;
+ font-size: 9pt;
+ border-width: 1;
+ border-color: #CCCCCC;
+ border-style: solid;
+ background-color: buttonface;
+ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#DDDDDD, endColorstr=#DDDDDD);
+}
+.style1 {background-color:#CCCCCC;border-left:1px solid #F5F5F5;border-top:1px solid #F5F5F5;border-right:1px solid #333333;border-bottom:1px solid #333333;width:80px;height:20px;}
+.style2 {background-color:#CCCCCC;border-left:1px solid #000000;border-top:1px solid #000000;border-right:1px solid #F5F5F5;border-bottom:1px solid #F5F5F5;width:80px;height:20px;}
+</style>
+<script type="text/javascript">
+function showProIndicators(){
+ 
+ var tab1 = document.getElementByIdx_x("tab1");
+    var tab2 = document.getElementByIdx_x("tab2");
+    var tab3 = document.getElementByIdx_x("tab3");
+ tab1.className="TabDownButton";
+ tab2.className="TabButton";
+ tab3.className="TabButton";
+}
+function showStruIndicators(){
+ var tab1 = document.getElementByIdx_x("tab1");
+    var tab2 = document.getElementByIdx_x("tab2");
+    var tab3 = document.getElementByIdx_x("tab3");
+ tab1.className="TabButton";
+ tab2.className="TabDownButton";
+ tab3.className="TabButton";
+}
+function showInsName(){
+ 
+ var tab1 = document.getElementByIdx_x("tab1");
+    var tab2 = document.getElementByIdx_x("tab2");
+    var tab3 = document.getElementByIdx_x("tab3");
+ tab1.className="TabButton";
+ tab2.className="TabButton";
+ tab3.className="TabDownButton";
+}
+</script>
+<body>
+<div id=myButton class=style1 >Button</div>
+<br><br>
+<button onclick="myButton.className='style1'">弹起</button>
+<button onclick="myButton.className='style2'">按下</button>
+<table cellpadding="0" cellspacing="0" border=0>
+ <tr>
+  <td height="22" width="140" valign="middle" align="center" id="tab1" class="TabDownButton" onclick="showProIndicators();">品种评估指标</td>
+  <td height="22" width="140" valign="middle" align="center" id="tab2" class="TabButton" onclick="showStruIndicators();">微观结构分月度指标</td>
+  <td height="22" width="140" valign="middle" align="center" id="tab3" class="TabButton" onclick="showInsName();">分月度主力合约名称</td>
+ </tr>
+</table>
+</body>
+</html>
